@@ -56,6 +56,7 @@ Ces templates permettent de réaliser les opérations suivantes :
 Le repository est structuré en trois parties distinctes, chacune représentant une étape du processus de transformation des données :
 
 ### Partie 1: jsontocsv
+![jsonToCsv](jsonTocsv.png)
 
 **Nom du template:** Task1finished
 
@@ -74,6 +75,7 @@ Le repository est structuré en trois parties distinctes, chacune représentant 
 9. **PutFile:** Écrit le fichier CSV généré dans le répertoire de destination.
 
 ### Partie 2: csvtopostgesql
+![csvToPostgreSql](csvToPostgresql.png)
 
 **Nom du template:** csvtopostgesql
 
