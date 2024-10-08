@@ -1,4 +1,4 @@
-# Traitement de données JSON avec Avro et PostgreSQL via Apache NiFi
+# Traitement de données JSON/CSV avec Avro et PostgreSQL via Apache NiFi
 
 Ce repository contient des templates Apache NiFi pour la manipulation de données JSON en utilisant un schéma Avro et une base de données PostgreSQL. 
 
