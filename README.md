@@ -91,11 +91,14 @@ Le repository est structuré en trois parties distinctes, chacune représentant 
 8. **UpdateAttribute:** Définit l'attribut "filename" du FlowFile fusionné sur "company_data.csv".
 9. **PutDatabaseRecord:** Insère les données Avro dans la table `company_data` de PostgreSQL.
 
-### Partie 3: postgressqltocsv
+### Partie 3: postgressqltoJson
 
-**Nom du template:** postgressqltocsv
+![PostgreSqlToJson](PostgresqlToJson.png)
 
-**Description:** Ce template extrait des données de PostgreSQL et les convertit en format CSV.
+
+**Nom du template:** postgressqltoJson
+
+**Description:** Ce template extrait des données de PostgreSQL et les convertit en format JSON.
 
 **Flux de travail:**
 
@@ -103,7 +106,7 @@ Le repository est structuré en trois parties distinctes, chacune représentant 
 2. **SplitAvro:** Divise le FlowFile Avro en plusieurs FlowFiles, un pour chaque enregistrement.
 3. **ConvertAvroToJSON:** Convertit chaque enregistrement Avro en un objet JSON.
 4. **MergeContent:** Fusionne les FlowFiles JSON individuels en un seul FlowFile.
-5. **UpdateAttribute:** Définit l'attribut "filename" du FlowFile fusionné sur "company_data.csv".
+5. **UpdateAttribute:** Définit l'attribut "filename" du FlowFile fusionné sur "company_data.json".
 6. **PutFile:** Écrit le FlowFile final (contenant les données JSON) dans le répertoire de destination.
 
 ## Schéma Avro
